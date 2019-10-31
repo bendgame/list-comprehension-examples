@@ -1,0 +1,42 @@
+color_list = ["green", "red", "blue", "yellow"]
+rgb = [color for color in color_list if color in('green', 'red', 'blue')]
+rgb
+
+
+green_list = [color for color in color_list if color == 'green']
+
+green_list2 = []
+for color in color_list:
+    if color == 'green':
+        green_list2.append(color)
+
+
+color_indicator = [0 if color == 'green'else 1 if color == 'red' else 2 if color == 'blue' else 3 for color in color_list]
+print(color_list)
+print(color_indicator)
+
+
+
+color_mapping = {'green': 0, 'red': 1, 'blue':2, 'yellow':3}
+color_indicator2 = [color_mapping[color] if color in color_mapping else 'na' for color in color_list]
+print(color_list)
+print(color_indicator2)
+
+word_lengths = [len(color) for color in color_list]
+word_lengths
+
+
+
+color_list1 = ['green', 'red', 'blue', 'yellow']
+color_list2 = ['dark', 'bright', 'tinted', 'glowing']
+
+color_matrix = [[color2 + ' ' + color1 for color1 in color_list1] for color2 in color_list2]
+color_matrix
+
+
+
+
+
+
+
+
